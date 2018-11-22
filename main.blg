@@ -1,7 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
-A level-1 auxiliary file: ./Capitulos/Intro.aux
 A level-1 auxiliary file: ./Capitulos/cap1.aux
 A level-1 auxiliary file: ./Capitulos/cap2.aux
 A level-1 auxiliary file: ./Capitulos/cap3.aux
@@ -20,7 +19,7 @@ Database file #1: myrefs.bib.bib
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
 You've used 4 entries,
             6951 wiz_defined-function locations,
-            1301 strings with 11230 characters,
+            1300 strings with 11209 characters,
 and the built_in function-call counts, 6212 in all, are:
 = -- 783
 > -- 53
