@@ -97,106 +97,47 @@
    \end{center}
 \end{titlepage}
 
+% ------------------------------------------------------------------------------
+%  TABLA DE CONTENIDOS
+% ------------------------------------------------------------------------------
+
 \tableofcontents
 
-\chapter{Introducción}
-   \lipsum[1-3]
 
-\chapter{Un titulo inesperado}
-\section{Primer apartado}
-   \lipsum[4-5]
-\subsection{Un subtitulo interesante}
-   \lipsum[6]
-\subsubsection{Esto es sorprendente}
-   \lipsum[2-3]
-   En la imagen \ref{fig:proyecto_latex} se visualiza el logo del proyecto \LaTeX.
+% ------------------------------------------------------------------------------
+%  TESIS
+% ------------------------------------------------------------------------------
 
-\begin{figure}[ht]
-   \centering
-   \includegraphics[width=6cm]{latex.png}
-   \caption{Logo del proyecto \LaTeX}
-   \label{fig:proyecto_latex}
-\end{figure}
-\section{Segundo apartado}
-   \lipsum[1]
-   \subsection{Esto es sorprendente}
-   \lipsum[2]
-\section{Tercer apartado}
-\subsection{Esto es sorprendente}
-\lipsum[3-4]
-\subsubsection{Un subtítulo interesante}
-\lipsum[5-7]
+%  Introduccion
+%  -----------------------------------------------------------------------------
+\include{./Capitulos/Intro}
+\thispagestyle{empty}
 
-\chapter{Otro título no esperado}
-   \lipsum[1-3]
-\section{Primer apartado}
-   \lipsum[4-5]
-\subsection{Un subtitulo interesante}
-   \lipsum[6]
-\subsubsection{Esto es sorprendente}
-   \lipsum[2-3]
-   En la imagen \ref{fig:proyecto_tres} se visualiza el logo del proyecto \LaTeX.
+%  Capítulo 1
+%  -----------------------------------------------------------------------------
 
-\begin{figure}[ht]
-   \centering
-   \includegraphics[width=6cm]{latex.png}
-   \caption{Logo del proyecto \LaTeX}
-   \label{fig:proyecto_tres}
-\end{figure}
-\section{Segundo apartado}
-   \lipsum[1]
-   \subsection{Esto es sorprendente}
-   \lipsum[2]
-\section{Tercer apartado}
-\subsection{Esto es sorprendente}
-\lipsum[3-4]
-\subsubsection{Un subtítulo interesante}
-\lipsum[5-7]
+\include{./Capitulos/cap1}
 
-\chapter{Un capitulo especial}
-\section{Primer apartado}
-   \lipsum[4-5]
-\subsection{Un subtitulo interesante}
-   \lipsum[6]
-\subsubsection{Esto es sorprendente}
-   \lipsum[2-3]
-   En la imagen \ref{fig:proyecto_dos} se visualiza el logo del proyecto \LaTeX.
+%  Capítulo 2
+%  -----------------------------------------------------------------------------
 
-\begin{figure}[ht]
-   \centering
-   \includegraphics[width=6cm]{latex.png}
-   \caption{Logo del proyecto \LaTeX}
-   \label{fig:proyecto_dos}
-\end{figure}
-\section{Segundo apartado}
-   \lipsum[1]
-   \subsection{Esto es sorprendente}
-   \lipsum[2]
-\section{Tercer apartado}
-\subsection{Esto es sorprendente}
-\lipsum[3-4]
-\subsubsection{Un subtítulo interesante}
-\lipsum[5-7]
-El contenido de este taller se encuentra en las presentaciones adjuntas que se
-complementan con el material de apoyo presentes en el capítulo 2 de este
-documento.\cite{Met78}
+\include{./Capitulos/cap2}
 
-El contenido de este taller se encuentra en las presentaciones adjuntas que se
-complementan con el material de apoyo presentes en el capítulo 2 de este
-documento.\cite{Wel03}
+%  Capítulo 3
+%  -----------------------------------------------------------------------------
 
-El contenido de este taller se encuentra en las presentaciones adjuntas que se
-complementan con el material de apoyo presentes en el capítulo 2 de este
-documento.\cite{Lit96}
+\include{./Capitulos/cap3}
 
-El contenido de este taller se encuentra en las presentaciones adjuntas que se
-complementan con el material de apoyo presentes en el capítulo 2 de este
-documento.\cite{Tho98w}
+%  Capítulo 4
+%  -----------------------------------------------------------------------------
+\include{./Capitulos/cap4}
 
 
 
 
-
+% ------------------------------------------------------------------------------
+%  BIBLIOGRAFÍA
+% ------------------------------------------------------------------------------
 
 \bibliographystyle{apacite}
 \bibliography{myrefs.bib}
