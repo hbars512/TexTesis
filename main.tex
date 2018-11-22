@@ -1,7 +1,7 @@
 %Plantilla basada en "Template for Masters / Doctoral Thesis" (plantilla disponible en writeLaTex) que subió LaTeXTemplates.com
 
-\documentclass[11pt]{book}
-\usepackage[paperwidth=17cm, paperheight=22.5cm, bottom=2.5cm, right=2.5cm]{geometry}
+\documentclass[12pt]{report}
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
 \usepackage{amssymb,amsmath,amsthm} %paquete para símbolo matemáticos
 \usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc} %Paquete para escribir acentos y otros símbolos directamente
@@ -11,13 +11,21 @@
 \graphicspath{{Img/}} %En qué carpeta están las imágenes
 \usepackage[nottoc]{tocbibind}
 \usepackage[pdftex,
-            pdfauthor={NOMBRE DEL AUTOR},
-            pdftitle={TÍTULO DE LA TESIS},
+            pdfauthor={Herbert Arias},
+            pdftitle={Plantilla},
             pdfsubject={ÁREA DE LA TESIS},
             pdfkeywords={PALABRAS CLAVE},
             pdfproducer={Latex con hyperref},
-            pdfcreator={pdflatex}]{hyperref}
+            pdfcreator={pdflatex},
+            hidelinks]{hyperref}
 
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[scaled=0.96]{helvet}
+\usepackage[helvet]{sfmath}
+\everymath={\sf}
+
+\usepackage{lipsum} 
+\usepackage{apacite} 
 
 
 \begin{document}
@@ -51,160 +59,147 @@
 %	PORTADA
 %----------------------------------------------------------------------------------------
 
-\title{TÍTULO DE LA TESIS} %Con este nombre se guardará el proyecto en writeLaTex
+\title{\Huge SOFTWARE EN EDUCACIÓN PRIMARIA} %Con este nombre se guardará el proyecto en writeLaTex
 
 \begin{titlepage}
-\begin{center}
+   \begin{center}
 
-\textsc{\Large Instituto Tecnológico Autónomo de México}\\[4em]
+      {\textbf{\fontsize{0.65cm}{0.65cm}\selectfont UNIVERSIDAD NACIONAL MAYOR DE SAN MARCOS}}\\
+      {\large (Universidad del Perú, DECANA DE AMÉRICA)}\\
+      \textbf{\Large FACULTAD DE INGENIERÍA DE SISTEMAS E INFORMÁTICA}\\[0.7em]
+      \textbf{{\large E.A.P. INGENIERÍA DE SOFTWARE}}
 
-%Figura
-\begin{figure}[h]
-\begin{center}
-\includegraphics{logo-ITAM_ch.jpg}
-\end{center}
-\end{figure}
+      %Figura
+      \begin{figure}[h]
+         \begin{center}
+            \includegraphics[width=5.5cm]{san_marcos.png}
+         \end{center}
+      \end{figure}
 
-\vspace{4em}
-
-\textsc{\huge \textbf{TÍTULO DE LA TESIS}}\\[4em]
-
-\textsc{\large Tesis}\\[1em]
-
-\textsc{que para obtener el título de}\\[1em]
-
-\textsc{TÍTULO  VAS A OBTENER}\\[1em]
-
-\textsc{presenta}\\[1em]
-
-\textsc{\Large AUTOR}\\[1em]
-
-\textsc{\large Asesor: NOMBRE}
-
-\end{center}
-
-\vspace*{\fill}
-\textsc{México, D.F. \hspace*{\fill} 2014}
-
+      \textbf{\Large CURSO}\\[0.7em]
+      {\Large REALIDAD NACIONAL Y MUNDIAL}\\
+      \vspace{2em}
+      \textbf{\Large MONOGRAFÍA}\\[0.7em]
+      {\Large SOFTWARE EN EDUCACIÓN PRIMARIA}\\
+      \vspace{2em}
+      \textbf{\Large PROFESOR}\\[0.7em]
+      {\Large Chaupi Torres, José Antonio}\\
+      \vspace{2em}
+      \textbf{\Large INTEGRANTES}\\[0.7em]
+      {\Large Tarmeño Noriega Carlos Daniel}\\[0.5em]
+      {\Large Tirado Julca Juan José}\\[0.5em]
+      {\Large Ñontol Lozano, Rafael Santiago}\\[0.5em]
+      {\Large Cortés Rosas, Ingrid Fiorella}\\[0.5em]
+      {\Large Arias Silva Herbert Brice}\\
+      \vspace{2em}
+      {\Large Lima - Peru}\\[0.7em]
+      \textbf{\Large 2018}
+   \end{center}
 \end{titlepage}
-
-
-%----------------------------------------------------------------------------------------
-%	DECLARACIÓN
-%----------------------------------------------------------------------------------------
-
-\thispagestyle{empty}
-\vspace*{\fill}
-\begingroup
-``Con fundamento en los artículos 21 y 27 de la Ley Federal del Derecho de Autor y como titular de los derechos moral y patrimonial de la obra titulada ``\textbf{TÍTULO DE LA TESIS}'', otorgo de manera gratuita y permanente al Instituto Tecnológico Autónomo de México y a la Biblioteca Raúl Bailléres Jr., la autorización para que fijen la obra en cualquier medio, incluido el electrónico, y la divulguen entre sus usuarios, profesores, estudiantes o terceras personas, sin que pueda percibir por tal divulgación una contraprestación''.
-
-\centering
-
-\hspace{3em}
-
-\textsc{AUTOR}
-
-\vspace{5em}
-
-\rule[1em]{20em}{0.5pt} % Línea para la fecha
-
-\textsc{Fecha}
- 
-\vspace{8em}
-
-\rule[1em]{20em}{0.5pt} % Línea para la firma
-
-\textsc{Firma}
-
-\endgroup
-\vspace*{\fill}
-
-
-%----------------------------------------------------------------------------------------
-%	DEDICATORIA
-%----------------------------------------------------------------------------------------
-
-\pagestyle{empty}
-\frontmatter
-
-\chapter*{}
-\begin{flushright}
-\textit{DEDICATORIA}
-\end{flushright}
-
-
-%----------------------------------------------------------------------------------------
-%	AGRADECIMIENTOS
-%----------------------------------------------------------------------------------------
-
-\chapter*{Agradecimientos}
-%\markboth{AGRADECIMIENTOS23}{AGRADECIMIENTOS} % encabezado 
-
-¡Muchas gracias a todos!
-
-
-%----------------------------------------------------------------------------------------
-%	PREFACIO
-%----------------------------------------------------------------------------------------
-
-\chapter*{Prefacio}
-
-\pagestyle{plain}
-%\markboth{PREFACIO23}{PREFACIO} % encabezado 
-
-PUEDEN QUITAR ESTA PARTE
-
-
-%----------------------------------------------------------------------------------------
-%	TABLA DE CONTENIDOS
-%---------------------------------------------------------------------------------------
 
 \tableofcontents
 
+\chapter{Introducción}
+   \lipsum[1-3]
 
-%----------------------------------------------------------------------------------------
-%	TESIS
-%----------------------------------------------------------------------------------------
-\mainmatter %empieza la numeración de las páginas
-\pagestyle{headings}
+\chapter{Un titulo inesperado}
+\section{Primer apartado}
+   \lipsum[4-5]
+\subsection{Un subtitulo interesante}
+   \lipsum[6]
+\subsubsection{Esto es sorprendente}
+   \lipsum[2-3]
+   En la imagen \ref{fig:proyecto_latex} se visualiza el logo del proyecto \LaTeX.
 
-%  Incluye los capítulos en el folder de capítulos
+\begin{figure}[ht]
+   \centering
+   \includegraphics[width=6cm]{latex.png}
+   \caption{Logo del proyecto \LaTeX}
+   \label{fig:proyecto_latex}
+\end{figure}
+\section{Segundo apartado}
+   \lipsum[1]
+   \subsection{Esto es sorprendente}
+   \lipsum[2]
+\section{Tercer apartado}
+\subsection{Esto es sorprendente}
+\lipsum[3-4]
+\subsubsection{Un subtítulo interesante}
+\lipsum[5-7]
 
-\include{Capitulos/cap1}
-\thispagestyle{empty}
-\include{Capitulos/Conclusiones}
-\thispagestyle{empty}
+\chapter{Otro título no esperado}
+   \lipsum[1-3]
+\section{Primer apartado}
+   \lipsum[4-5]
+\subsection{Un subtitulo interesante}
+   \lipsum[6]
+\subsubsection{Esto es sorprendente}
+   \lipsum[2-3]
+   En la imagen \ref{fig:proyecto_tres} se visualiza el logo del proyecto \LaTeX.
+
+\begin{figure}[ht]
+   \centering
+   \includegraphics[width=6cm]{latex.png}
+   \caption{Logo del proyecto \LaTeX}
+   \label{fig:proyecto_tres}
+\end{figure}
+\section{Segundo apartado}
+   \lipsum[1]
+   \subsection{Esto es sorprendente}
+   \lipsum[2]
+\section{Tercer apartado}
+\subsection{Esto es sorprendente}
+\lipsum[3-4]
+\subsubsection{Un subtítulo interesante}
+\lipsum[5-7]
+
+\chapter{Un capitulo especial}
+\section{Primer apartado}
+   \lipsum[4-5]
+\subsection{Un subtitulo interesante}
+   \lipsum[6]
+\subsubsection{Esto es sorprendente}
+   \lipsum[2-3]
+   En la imagen \ref{fig:proyecto_dos} se visualiza el logo del proyecto \LaTeX.
+
+\begin{figure}[ht]
+   \centering
+   \includegraphics[width=6cm]{latex.png}
+   \caption{Logo del proyecto \LaTeX}
+   \label{fig:proyecto_dos}
+\end{figure}
+\section{Segundo apartado}
+   \lipsum[1]
+   \subsection{Esto es sorprendente}
+   \lipsum[2]
+\section{Tercer apartado}
+\subsection{Esto es sorprendente}
+\lipsum[3-4]
+\subsubsection{Un subtítulo interesante}
+\lipsum[5-7]
+El contenido de este taller se encuentra en las presentaciones adjuntas que se
+complementan con el material de apoyo presentes en el capítulo 2 de este
+documento.\cite{Met78}
+
+El contenido de este taller se encuentra en las presentaciones adjuntas que se
+complementan con el material de apoyo presentes en el capítulo 2 de este
+documento.\cite{Wel03}
+
+El contenido de este taller se encuentra en las presentaciones adjuntas que se
+complementan con el material de apoyo presentes en el capítulo 2 de este
+documento.\cite{Lit96}
+
+El contenido de este taller se encuentra en las presentaciones adjuntas que se
+complementan con el material de apoyo presentes en el capítulo 2 de este
+documento.\cite{Tho98w}
 
 
-%----------------------------------------------------------------------------------------
-%	APÉNDICES
-%----------------------------------------------------------------------------------------
-
-\addtocontents{toc}{\vspace{2em}} % Agrega espacios en la toc
-
-\appendix % Los siguientes capítulos son apéndices
-
-%  Incluye los apéndices en el folder de apéndices
-
-\include{Apendices/Ap}
-\thispagestyle{empty}
-%\include{Apendices/AppendixB}
-%\include{Apendices/AppendixC}
-
-\addtocontents{toc}{\vspace{2em}} % Agrega espacio en la toc
-
-
-%----------------------------------------------------------------------------------------
-%	BIBLIOGRAFÍA
-%----------------------------------------------------------------------------------------
-\backmatter
-\nocite{*}
-\bibliographystyle{plain}
-\bibliography{bibliografía.bib} %Aquí ponen el nombre del archivo .bib
 
 
 
 
+\bibliographystyle{apacite}
+\bibliography{myrefs.bib}
 
 
 \end{document}

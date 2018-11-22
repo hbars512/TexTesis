@@ -1,0 +1,26 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Metz%
+}{%
+Metz%
+}{%
+{\protect \APACyear {1978}}%
+}]{%
+Met78}
+\APACinsertmetastar {%
+Met78}%
+\begin{APACrefauthors}%
+Metz, C\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1978}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Basic principles of {ROC} analysis} {Basic principles of
+  {ROC} analysis}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{{S}eminars in {N}uclear {M}edicine}{8}{}{283--298}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
